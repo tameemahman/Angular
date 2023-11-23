@@ -1,0 +1,84 @@
+<nav class="navbar navbar-light bg-primary p-2">
+    <h4 class="text-light"> Test CRUD</h4>
+    <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button>
+    </div>
+</nav>
+
+<div class="container">
+    <table class="table table-striped text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Gender</th>
+                <th>Hobby</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of teacherData">
+                <td>{{row.id}}</td>
+                <td>{{row.name}}</td>
+                <td>{{row.department}}</td>
+                <td>{{row.gender}}</td>
+                <td>{{row.hobby}}</td>
+               
+
+                <td>
+                    <button class="btn btn-warning mx-1" (click)="onEdit(row)" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Edit</button>
+                    <button class="btn btn-danger mx-1" (click)="deleteTeacher(row)">Delete</button>
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Teacher Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body">
+                    <form [formGroup]="formValue">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Department</label>
+                            <input type="text" class="form-control" formControlName="department">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <input type="email" class="form-control" formControlName="gender">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hobby</label>
+                            <input type="text" class="form-control" formControlName="hobby">
+                        </div>
+                       
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" (click)="savetacher()">Save</button>
+                    <button type="button" class="btn btn-primary" (click)=" teacherEdit()">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>

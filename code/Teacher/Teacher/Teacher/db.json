@@ -1,0 +1,35 @@
+{
+  "teacher": [
+    {
+      "id": 1,
+      "name": "",
+      "department": "",
+      "gender": "",
+      "hobby": ""
+    },
+    {
+      "id": 2,
+      "name": "adfads",
+      "department": "sdasd",
+      "gender": "sdasdasd",
+      "hobby": "asdasdasda"
+    },
+    {
+      "id": 3,
+      "name": "sdfdf",
+      "department": "dsfdf",
+      "gender": "4545",
+      "hobby": "2323"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
