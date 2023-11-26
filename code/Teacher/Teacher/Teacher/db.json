@@ -2,24 +2,38 @@
   "teacher": [
     {
       "id": 1,
-      "name": "",
-      "department": "",
-      "gender": "",
-      "hobby": ""
+      "name": "Fahim Saleh",
+      "department": "HR",
+      "gender": "Male",
+      "hobby": "Sports"
     },
     {
       "id": 2,
-      "name": "adfads",
-      "department": "sdasd",
-      "gender": "sdasdasd",
-      "hobby": "asdasdasda"
+      "name": "Bin Kashem",
+      "department": "Account",
+      "gender": "Male",
+      "hobby": "Farm"
     },
     {
       "id": 3,
-      "name": "sdfdf",
-      "department": "dsfdf",
-      "gender": "4545",
-      "hobby": "2323"
+      "name": "Naznin",
+      "department": "Managing",
+      "gender": "Female",
+      "hobby": "Paint"
+    },
+    {
+      "id": 4,
+      "name": "Nahid",
+      "department": "Finance",
+      "gender": "Male",
+      "hobby": "Sports"
+    },
+    {
+      "id": 5,
+      "name": "Natasha",
+      "department": "Marketing",
+      "gender": "Female",
+      "hobby": "Reading"
     }
   ],
   "comments": [

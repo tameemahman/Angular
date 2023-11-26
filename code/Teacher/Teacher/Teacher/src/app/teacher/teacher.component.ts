@@ -1,4 +1,4 @@
-import { Component, } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { TeacherModel } from './teacher.model';
 import { TeacherService } from '../service/teacher.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   templateUrl: './teacher.component.html',
   styleUrl: './teacher.component.css'
 })
-export class TeacherComponent {
+export class TeacherComponent  implements OnInit {
 
 
   teachermodel: TeacherModel = new TeacherModel();
@@ -85,11 +85,11 @@ export class TeacherComponent {
   }
 onEdit(row:any){
 this.teachermodel.id=row.id;
-this.formValue.controls['Id'].setValue(row.Id);
-this.formValue.controls['Name'].setValue(row.Name);
-this.formValue.controls['Department'].setValue(row.Department);
-this.formValue.controls['Gender'].setValue(row.Gender);
-this.formValue.controls['Hobby'].setValue(row.Hobby);
+this.formValue.controls['Id'].setValue(row.id);
+this.formValue.controls['Name'].setValue(row.name);
+this.formValue.controls['Department'].setValue(row.department);
+this.formValue.controls['Gender'].setValue(row.gender);
+this.formValue.controls['Hobby'].setValue(row.hobby);
 
 
 
@@ -97,7 +97,7 @@ this.formValue.controls['Hobby'].setValue(row.Hobby);
 
 
 teacherEdit(){
-this.teachermodel.id=this.formValue.value.id;
+// this.teachermodel.id=this.formValue.value.id;
 this.teachermodel.name=this.formValue.value.name;
 this.teachermodel.department=this.formValue.value.department;
 this.teachermodel.gender=this.formValue.value.gender;
@@ -106,11 +106,11 @@ this.teachermodel.hobby=this.formValue.value.hobby;
 this.api.editTeacher(this.teachermodel.id,this.teachermodel)
 .subscribe(res=>{
   console.log(res);
-  alert("Tacher Updated")
+  alert("Teacher Updated")
   this.formValue.reset();
   this.getAll();
 },
-err=>{alert("Data Not Updated")}
+err=>{alert("Teacher Not Updated")}
 
 )
 
