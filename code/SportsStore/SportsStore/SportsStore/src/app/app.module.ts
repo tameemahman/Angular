@@ -8,6 +8,10 @@ import { ProductRepository } from './model/product.repository';
 import { StaticDataSource } from './model/static.datasource';
 import { provideHttpClient } from '@angular/common/http';
 import { StoreModule } from './store/store.module';
+import { StoreFirstGuard } from './storeFirst.guard';
+import { RouterModule } from '@angular/router';
+import { CartDetailComponent } from './store/cartDetail.component';
+import { CheckoutComponent } from './store/checkout.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,31 @@ import { StoreModule } from './store/store.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule
+    StoreModule,
+    RouterModule.forRoot([
+      {
+      path: "store", component: StoreComponent,
+      canActivate: [StoreFirstGuard]
+      },
+      {
+      path: "cart", component: CartDetailComponent,
+      canActivate: [StoreFirstGuard]
+      },
+      {
+      path: "checkout", component: CheckoutComponent,
+      canActivate: [StoreFirstGuard]
+      },
+      { path: "**", redirectTo: "/store" }
+      ])
+    
   ],
+
+  
   providers: [
     provideHttpClient(),
     ProductRepository,
-    StaticDataSource
+    StaticDataSource,
+    StoreFirstGuard
   ],
   bootstrap: [AppComponent]
 })
