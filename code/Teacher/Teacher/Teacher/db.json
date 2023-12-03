@@ -30,10 +30,9 @@
     },
     {
       "id": 5,
-      "name": "Natasha",
-      "department": "Marketing",
-      "gender": "Female",
-      "hobby": "Reading"
+      "name": "we",
+      "department": "we",
+      "gender": "Male"
     },
     {
       "id": 6,
@@ -41,6 +40,23 @@
       "department": "Isdb-Bisew",
       "gender": "Male",
       "hobby": "Reading"
+    },
+    {
+      "hobby": [
+        "Reading",
+        "Sleeping"
+      ],
+      "id": 7,
+      "name": "ras",
+      "department": "asd",
+      "gender": "Female"
+    },
+    {
+      "hobby": [],
+      "id": 8,
+      "name": null,
+      "department": null,
+      "gender": null
     }
   ],
   "comments": [

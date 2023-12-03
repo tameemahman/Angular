@@ -28,7 +28,11 @@ export class TeacherComponent  implements OnInit {
       name: [''],
       department: [''],
       gender: [''],
-      hobby: [''],
+      // hobby: [''],
+      hobby_reading: [false],
+    hobby_gaming:[false],
+    hobby_fishing:[false],
+    hobby_sleeping:[false],
     });
     this.getAll();
   }
@@ -40,8 +44,21 @@ export class TeacherComponent  implements OnInit {
     this.teachermodel.name = this.formValue.value.name;
     this.teachermodel.department = this.formValue.value.department;
     this.teachermodel.gender = this.formValue.value.gender;
-    this.teachermodel.hobby = this.formValue.value.hobby;
-  
+    // this.teachermodel.hobby = this.formValue.value.hobby;
+    let hobbies: string[] = [];
+  if (this.formValue.value.hobby_reading) {
+    hobbies.push('Reading');
+  }
+  if (this.formValue.value.hobby_gaming) {
+    hobbies.push('Gaming');
+  }
+  if (this.formValue.value.hobby_fishing){
+    hobbies.push('Fishing')
+  }
+  if (this.formValue.value.hobby_sleeping){
+    hobbies.push('Sleeping')
+  }
+  this.teachermodel.hobby = hobbies;
     this.api.teacherPost(this.teachermodel)
       .subscribe(res =>{
       console.log(res);
@@ -98,11 +115,29 @@ this.formValue.controls['Hobby'].setValue(row.hobby);
 
 teacherEdit(){
 // this.teachermodel.id=this.formValue.value.id;
-this.teachermodel.name=this.formValue.value.name;
-this.teachermodel.department=this.formValue.value.department;
-this.teachermodel.gender=this.formValue.value.gender;
-this.teachermodel.hobby=this.formValue.value.hobby;
-
+// this.teachermodel.name=this.formValue.value.name;
+// this.teachermodel.department=this.formValue.value.department;
+// this.teachermodel.gender=this.formValue.value.gender;
+// this.teachermodel.hobby=this.formValue.value.hobby;
+this.teachermodel.id = this.formValue.value.id;
+    this.teachermodel.name = this.formValue.value.name;
+    this.teachermodel.department = this.formValue.value.department;
+    this.teachermodel.gender = this.formValue.value.gender;
+    // this.teachermodel.hobby = this.formValue.value.hobby;
+    let hobbies: string[] = [];
+  if (this.formValue.value.hobby_reading) {
+    hobbies.push('Reading');
+  }
+  if (this.formValue.value.hobby_gaming) {
+    hobbies.push('Gaming');
+  }
+  if (this.formValue.value.hobby_fishing){
+    hobbies.push('Fishing')
+  }
+  if (this.formValue.value.hobby_sleeping){
+    hobbies.push('Sleeping')
+  }
+  this.teachermodel.hobby = hobbies;
 this.api.editTeacher(this.teachermodel.id,this.teachermodel)
 .subscribe(res=>{
   console.log(res);
