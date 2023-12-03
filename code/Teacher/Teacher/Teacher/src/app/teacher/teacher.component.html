@@ -57,53 +57,42 @@
 
                     <div class="mb-3">
                         <label class="form-label">Department</label>
-                        <input type="text" class="form-control" formControlName="department">
+                        <select class="form-select" formControlName="department">
+                            <option value="IT">IT</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <!-- Add other department options as needed -->
+                        </select>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">Gender</label>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="male" value="Male"
-                                formControlName="gender">
+                            <input type="radio" class="form-check-input" id="male" value="Male" formControlName="gender">
                             <label class="form-check-label" for="male">Male</label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="female" value="Female"
-                                formControlName="gender">
+                            <input type="radio" class="form-check-input" id="female" value="Female" formControlName="gender">
                             <label class="form-check-label" for="female">Female</label>
                         </div>
                     </div>
-                    <!-- dropdownHobby
-                    <div class="mb-3">
-                        <label class="form-label">Hobby</label>
-                        <select class="form-select" formControlName="hobby">
-                            <option value="Reading">Reading</option>
-                            <option value="Sports">Sports</option>
-                            <option value="Sports">Travel</option>
-                            <option value="Sports">Gaming</option>
-                           
-                        </select>
-                    </div> -->
-                    <!-- checkbox hobby  -->
+
                     <div class="mb-3">
                         <label class="form-label">Hobby</label><br>
                         <label class="form-check-label">
-                            <input type="checkbox" formControlName="hobby_reading" value="Reading"
-                                class="form-check-input"> Reading
+                            <input type="checkbox" formControlName="hobby_reading" value="Reading" class="form-check-input"> Reading
                         </label>
                         <label class="form-check-label mx-2">
-                            <input type="checkbox" formControlName="hobby_gaming" value="Gaming"
-                                class="form-check-input"> Gaming
+                            <input type="checkbox" formControlName="hobby_gaming" value="Gaming" class="form-check-input"> Gaming
                         </label>
 
                         <label class="form-check-label mx-2">
-                            <input type="checkbox" formControlName="hobby_fishing" value="Fishing"
-                                class="form-check-input"> Fishing
+                            <input type="checkbox" formControlName="hobby_fishing" value="Fishing" class="form-check-input"> Fishing
                         </label>
 
                         <label class="form-check-label mx-2">
-                            <input type="checkbox" formControlName="hobby_sleeping" value="Fishing"
-                                class="form-check-input"> Sleeping
+                            <input type="checkbox" formControlName="hobby_sleeping" value="Sleeping" class="form-check-input"> Sleeping
                         </label>
                         <!-- Add other hobby checkboxes as needed -->
                     </div>

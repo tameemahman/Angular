@@ -57,6 +57,16 @@
       "name": null,
       "department": null,
       "gender": null
+    },
+    {
+      "hobby": [
+        "Fishing",
+        "Sleeping"
+      ],
+      "id": 9,
+      "name": "wewe",
+      "department": "Physics",
+      "gender": "Male"
     }
   ],
   "comments": [
