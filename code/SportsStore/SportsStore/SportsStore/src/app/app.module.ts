@@ -54,7 +54,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     provideHttpClient(),
     ProductRepository,
     StaticDataSource,
-    StoreFirstGuard
+    StoreFirstGuard,
+    
   ],
   bootstrap: [AppComponent]
 })
