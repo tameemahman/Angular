@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { StudentService } from '../Service/student.service';
 import { StudentModel } from './Student.model';
 
@@ -11,7 +11,7 @@ import { StudentModel } from './Student.model';
 export class StudentComponent implements OnInit {
 
   studentmodel: StudentModel = new StudentModel();
-  formValue: FormGroup;
+  formValue!: FormGroup<any>;
 
   studentData: any;
 
