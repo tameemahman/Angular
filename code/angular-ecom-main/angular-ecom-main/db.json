@@ -1,0 +1,259 @@
+{
+  "seller": [
+    {
+      "name": "sam sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
+      "id": 3
+    },
+    {
+      "name": "bruce",
+      "password": "abc@123",
+      "email": "bruce@test.com",
+      "id": 4
+    },
+    {
+      "name": "anil",
+      "password": "abc123",
+      "email": "anil@test.com",
+      "id": 5
+    },
+    {
+      "name": "alena",
+      "password": "abc123",
+      "email": "alena@test.com",
+      "id": 6
+    },
+    {
+      "name": "sam",
+      "password": "abc@123",
+      "email": "sam@test.com",
+      "id": 7
+    },
+    {
+      "name": "bhasker",
+      "password": "abc@123",
+      "email": "bhasker@test.com",
+      "id": 8
+    },
+    {
+      "name": "jahir",
+      "password": "12345",
+      "email": "jahir@gmail.com",
+      "id": 9
+    }
+  ],
+
+  
+
+
+
+  "products": [
+    {
+      "name": "Vivian Plush Blanket ",
+      "price": "5890",
+      "category": "Knitted Thow Blanket",
+      "color": "white",
+      "description": "Knitted Blanket",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/files/Main_3_604d76ce-c031-43c8-ac43-96820e0c5bb2_1200x.jpg?v=1629652013",
+      "id": 1
+    },
+    {
+      "name": "Lois series bedsheet",
+      "price": "8990",
+      "category": "bedroom decor",
+      "color": "black",
+      "description": "BedSheet",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/files/Main_2_58baf80d-c7f0-49de-8836-61911d5b2c60_1200x.jpg?v=1629652018",
+      "id": 2
+    },
+    {
+      "name": "ClarkSon",
+      "price": "2990",
+      "category": "Wall-Clock",
+      "color": "Rose Gold",
+      "description": "Minimalistic Wall Decor",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c7_b54043ed-3301-406a-adbc-91ce557f440c_709x.jpg?v=1605096763",
+      "id": 3
+    },
+    {
+      "name": "Avelyn Bath Decor",
+      "price": "990",
+      "category": "bath decor",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c2_0ca72295-e183-4e41-b69b-7df1138d6b73_720x.jpg?v=1623656146",
+      "id": 4
+    },
+    {
+      "name": "Marbelluxe",
+      "price": "1190",
+      "category": "bath decor",
+      "color": "Multicolor",
+      "description": "Minimalistic bath decor ",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/files/O1CN01qLZ7pN1LVHJQUkFbu__2214499681304-0-cib_720x.jpg?v=1700305291",
+      "id": 5
+    },
+    {
+      "name": "Royale Mug",
+      "price": "2550",
+      "category": "Gift Mug",
+      "color": "White Black",
+      "description": "Beautifully crafted with 'King' and 'Queen' initials",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c6_58f9dfa1-f7c4-4b83-8f2e-b9411a61e364_720x.jpg?v=1617784933",
+      "id": 6
+    },
+    {
+      "name": "Enchanted Series Dessert Tray",
+      "price": "5990",
+      "category": "Dining Decor",
+      "color": "Teal , White ",
+      "description": "Vibrant and vivacious, Enchanted Series desert trays ",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/12520456197_1549371625_720x.jpg?v=1617181075",
+      "id": 7
+    },
+    {
+      "name": "Grace Essential Oil diffuser by Home and Beyond",
+      "price": "2890",
+      "category": "Diffuser",
+      "color": "Black, Grey , White",
+      "description": "Relieve the tiredness of the day and relax your nerves",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c7_99b678db-9605-4ebb-8c99-8661d9c84a5e_720x.jpg?v=1664631932",
+      "id": 8
+    },
+    {
+      "name": "Rosaline Seris jar",
+      "price": "1490",
+      "category": "Kitchenware",
+      "color": "Multicolor",
+      "description": "This southwestern style spice jars compliments any kitchen.",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c19_800x.jpg?v=1651904176",
+      "id": 9
+    },
+    {
+      "name": "Thea Cutlery",
+      "price": "2090",
+      "category": "Dining Decor",
+      "color": "Golden",
+      "description": "Effortlessly transform your entire eating experience with our medieval inspired Thea cutlery series.",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/c3_8ba67771-c285-4832-b17a-1493bfd10422_460x.jpg?v=1647199940",
+      "id": 10
+    },
+    {
+      "name": "Gradiance Fur Cover",
+      "price": "2290",
+      "category": "bedroom decor",
+      "color": "Multicolor",
+      "description": "Gradiance series fur covers blends contrasting colors in a beautiful way..",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/23528611433_1544624120_720x.jpg?v=1630762684",
+      "id": 11
+    },
+    {
+      "name": "Crescent Lamp",
+      "price": "5290",
+      "category": "lamp",
+      "color": "Multicolor",
+      "description": "Make a statement. Our Nordic inspired Crescent luxe lamp is a work of art",
+      "image": "https://homeandbeyond.com.bd/cdn/shop/products/10296726283_940598022_720x.jpg?v=1633541094",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "jahir",
+      "email": "jahir@gmail.com",
+      "password": "asdf12",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": 8
+    }
+  ],
+  "orders": [
+    {
+      "email": "anil@user.com",
+      "address": "noida sector x",
+      "contact": "9999",
+      "totalPrice": 104750,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "anil@test.com",
+      "address": "noida sector x",
+      "contact": "8877",
+      "totalPrice": 6100,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "email": "jahir",
+      "address": "jahir@gmail.com",
+      "contact": "adfjajfkw",
+      "totalPrice": 100100,
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "email": "tameem.handb@gmail.com",
+      "address": "sadf",
+      "contact": "01912466464",
+      "totalPrice": 200100,
+      "userId": 1,
+      "id": 5
+    }
+  ]
+}
